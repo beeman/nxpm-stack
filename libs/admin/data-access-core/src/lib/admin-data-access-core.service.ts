@@ -5,7 +5,9 @@ import { ApolloAngularSDK, IntercomMessage } from '../generated/graphql'
 
 @Injectable()
 export class AdminDataAccessCoreService {
-  constructor(public readonly sdk: ApolloAngularSDK) {}
+  constructor(public readonly sdk: ApolloAngularSDK) {
+    console.log('Something')
+  }
 
   public uptime(): Observable<number> {
     return this.sdk.uptime(null, { fetchPolicy: 'network-only' }).pipe(map((res) => res?.data?.uptime))
