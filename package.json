@@ -39,6 +39,7 @@
     "setup": "yarn prisma migrate save -n initial-migration --experimental && yarn prisma migrate up --experimental && yarn prisma:generate",
     "start": "node dist/apps/api/main.js",
     "test": "nx test",
+    "test:ci": "yarn run test",
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic"
   },
