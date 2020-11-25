@@ -12,6 +12,7 @@
     "affected:libs": "nx affected:libs",
     "affected:lint": "nx affected:lint",
     "affected:test": "nx affected:test",
+    "affected:deploy": "yarn affected --target deploy",
     "build": "yarn build:admin && yarn build:api",
     "build:admin": "nx build admin --prod",
     "build:api": "nx build api --prod",
