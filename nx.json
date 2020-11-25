@@ -1,7 +1,7 @@
 {
   "npmScope": "nxpm-stack",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "workspace.json": "*",
@@ -22,5 +22,64 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "admin": {
+      "tags": []
+    },
+    "admin-assets": {
+      "tags": ["scope:admin", "type:assets"]
+    },
+    "admin-data-access-auth": {
+      "tags": ["scope:admin", "type:data-access"]
+    },
+    "admin-data-access-core": {
+      "tags": ["scope:admin", "type:data-access"]
+    },
+    "admin-e2e": {
+      "tags": [],
+      "implicitDependencies": ["admin"]
+    },
+    "admin-feature-about": {
+      "tags": ["scope:admin", "type:feature"]
+    },
+    "admin-feature-auth": {
+      "tags": ["scope:admin", "type:feature"]
+    },
+    "admin-feature-core": {
+      "tags": ["scope:admin", "type:feature"]
+    },
+    "admin-feature-dashboard": {
+      "tags": ["scope:admin", "type:feature"]
+    },
+    "admin-feature-shell": {
+      "tags": ["scope:admin", "type:feature"]
+    },
+    "admin-layout": {
+      "tags": ["scope:admin", "type:layout"]
+    },
+    "admin-style": {
+      "tags": ["scope:admin", "type:style"]
+    },
+    "admin-ui-form": {
+      "tags": ["scope:admin", "type:ui"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-data-access-auth": {
+      "tags": ["scope:api", "type:data-access"]
+    },
+    "api-data-access-core": {
+      "tags": ["scope:api", "type:data-access"]
+    },
+    "api-e2e": {
+      "tags": []
+    },
+    "api-feature-auth": {
+      "tags": ["scope:api", "type:feature"]
+    },
+    "api-feature-core": {
+      "tags": ["scope:api", "type:feature"]
+    }
+  }
 }

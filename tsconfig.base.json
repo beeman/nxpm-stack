@@ -15,7 +15,24 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nxpm-stack/admin/assets": ["libs/admin/assets/src/index.ts"],
+      "@nxpm-stack/admin/data-access-auth": ["libs/admin/data-access-auth/src/index.ts"],
+      "@nxpm-stack/admin/data-access-core": ["libs/admin/data-access-core/src/index.ts"],
+      "@nxpm-stack/admin/feature-about": ["libs/admin/feature-about/src/index.ts"],
+      "@nxpm-stack/admin/feature-auth": ["libs/admin/feature-auth/src/index.ts"],
+      "@nxpm-stack/admin/feature-core": ["libs/admin/feature-core/src/index.ts"],
+      "@nxpm-stack/admin/feature-dashboard": ["libs/admin/feature-dashboard/src/index.ts"],
+      "@nxpm-stack/admin/feature-shell": ["libs/admin/feature-shell/src/index.ts"],
+      "@nxpm-stack/admin/layout": ["libs/admin/layout/src/index.ts"],
+      "@nxpm-stack/admin/style": ["libs/admin/style/src/index.ts"],
+      "@nxpm-stack/admin/ui-form": ["libs/admin/ui-form/src/index.ts"],
+      "@nxpm-stack/api-app-module": ["apps/api/src/app/app.module.ts"],
+      "@nxpm-stack/api/data-access-auth": ["libs/api/data-access-auth/src/index.ts"],
+      "@nxpm-stack/api/data-access-core": ["libs/api/data-access-core/src/index.ts"],
+      "@nxpm-stack/api/feature-auth": ["libs/api/feature-auth/src/index.ts"],
+      "@nxpm-stack/api/feature-core": ["libs/api/feature-core/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
