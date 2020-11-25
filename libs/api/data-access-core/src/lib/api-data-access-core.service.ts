@@ -42,14 +42,14 @@ export class ApiDataAccessCoreService extends PrismaClient implements OnModuleIn
   }
 
   public findUserByEmail(email: string) {
-    return this.user.findOne({ where: { email } })
+    return this.user.findUnique({ where: { email } })
   }
 
   public findUserById(userId: string) {
-    return this.user.findOne({ where: { id: userId } })
+    return this.user.findUnique({ where: { id: userId } })
   }
 
   public findUserByUsername(username: string) {
-    return this.user.findOne({ where: { username } })
+    return this.user.findUnique({ where: { username } })
   }
 }
